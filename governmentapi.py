@@ -11,7 +11,7 @@ import requests
 from pprint import  pprint
 
 
-def SearchProject(key='รถถัง'):
+def SearchProject(key=''):
   # maybe bugs when fill params key into func
   token = 'paste your token from data.go.th'
 
@@ -41,5 +41,5 @@ def SearchProject(key='รถถัง'):
   print('ค้นหาคำว่า: {} งบประมาณทั้งหมด: {:,d} '.format(key, sum(allbugdet)))
   print('*************************************')
 
-SearchProject('รถถัง')
+SearchProject()
 
